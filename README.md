@@ -11,3 +11,15 @@ When you deploy from here, it will make you setup the Logflare integration. This
 [Manage your log drains](https://logflare.app/integrations/vercel/edit)
 
 ![Manage Log Drains with Logflare](https://logflare.app/images/marketing/guides/vercel-setup/create-vercel-log-drain.png)
+
+## Server Side Logging
+
+Explore various ways to log data and errors from the server side:
+
+https://github.com/Logflare/next-pino-logflare-logging-example/tree/main/pages/api
+
+## Client Side Logging
+
+When setup `pino-logflare` will send your cient-side logs to Logflare as well:
+
+https://github.com/Logflare/next-pino-logflare-logging-example/blob/main/pages/index.js
