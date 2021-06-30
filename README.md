@@ -14,7 +14,7 @@ https://github.com/Logflare/next-pino-logflare-logging-example/blob/main/logger/
 
 When you deploy from here, it will make you setup the Logflare integration. This does not automatically setup a log drain for you. Visit your Logflare account and setup a log drain.
 
-[Manage your log drains](https://logflare.app/integrations/vercel/edit)
+[Manage your log drains with Logflare ➡️](https://logflare.app/integrations/vercel/edit)
 
 ![Manage Log Drains with Logflare](https://logflare.app/images/marketing/guides/vercel-setup/create-vercel-log-drain.png)
 
