@@ -3,7 +3,7 @@
 import logger from '../../logger/logger'
 
 export default function handler(req, res) {
-  resp.status(200)
+  res.status(200)
 
   const data = {
     request: {
