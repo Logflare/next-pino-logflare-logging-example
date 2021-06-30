@@ -11,5 +11,5 @@ export default function handler(req, res) {
         onlyPino.error(e)
     }
 
-    res.status(200).json({ error: 'true' })
+    res.status(500).json({ error: 'true' })
 }

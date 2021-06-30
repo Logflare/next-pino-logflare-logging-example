@@ -9,5 +9,5 @@ export default function handler(req, res) {
         logger.error(e)
     }
 
-    res.status(200).json({ error: 'true' })
+    res.status(500).json({ error: 'true' })
 }
