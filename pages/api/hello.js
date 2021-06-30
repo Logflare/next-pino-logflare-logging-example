@@ -18,8 +18,8 @@ export default function handler(req, res) {
   // Logging to pino-logflare
   logger.info(data, "Handled response. Logged with pino-logflare.")
 
-  // Logging with pino. Both will end up in Vercel's log drains with slight different payloads.
-  // Both will end up Logflare if a log drain is setup.
+  // Logging with pino. 
+  // Both will end up in Vercel's log drains with slight different payloads.
   const onlyPino = require('pino')()
 
   onlyPino.info(data, "Handled response. Logged with pino.")
