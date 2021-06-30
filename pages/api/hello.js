@@ -3,17 +3,18 @@
 import logger from '../../logger/logger'
 
 export default function handler(req, res) {
-  res.status(200)
+  resp.status(200)
 
-  data = {
-    requst: {
+  const data = {
+    request: {
       method: req.method,
-      path: req.path
+      url: req.url
     },
     response: {
-      status: res.status
+      status: res.statusCode
     }
   }
+
   // Logging to pino-logflare
   logger.info(data, "Handled response. Logged with pino-logflare.")
 
@@ -24,7 +25,7 @@ export default function handler(req, res) {
   onlyPino.info(data, "Handled response. Logged with pino.")
 
   // We can also simply parse our object into JSON and log it with console.
-  console.info(JSON.parse(data), "Handled response. Logged with `console`.")
+  console.info(JSON.stringify(data), "Handled response. Logged with `console`.")
 
   res.json({ name: 'John Doe' })
 }

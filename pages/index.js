@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import logger from '../../logger/logger'
+import logger from '../logger/logger'
 
 export default function Home() {
   // Logging to pino-logflare.
