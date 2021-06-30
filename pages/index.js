@@ -1,8 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import logger from '../../logger/logger'
 
 export default function Home() {
+  // Logging to pino-logflare.
+  // Will get sent to Logflare via HTTP.
+  logger.info("Client side logging. Logged with pino-logflare.")
+
+  // Logging with pino. 
+  // Will appear only in the console of the client.
+  const onlyPino = require('pino')()
+
+  onlyPino.info("Client side logging. Logged with pino.")
+
   return (
     <div className={styles.container}>
       <Head>
