@@ -10,7 +10,7 @@ const { stream, send } = logflarePinoVercel({
     sourceToken: "eb1d841a-e0e4-4d23-af61-84465c808157"
 });
 
-// create pino loggger
+// create pino logger
 const logger = pino({
     browser: {
         transmit: {
